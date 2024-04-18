@@ -3,9 +3,11 @@ import React from 'react';
 import logoImg from '@/assets/logo.png';
 import style from './main-header.module.css';
 import Image from 'next/image';
-import { MainHeaderBackground } from './mainHeaderBackground';
+import { MainHeaderBackground } from './main-header-background';
+import NavLink from './nav-link';
 
 export const MainHeader = () => {
+
   return (
     <>
       <header className={style.header}>
@@ -19,8 +21,8 @@ export const MainHeader = () => {
         </Link>
         <nav className={style.nav}>
           <ul>
-            <li><Link href="/meals">Browse Meals</Link></li>
-            <li><Link href="/community">Foodies Community</Link></li>
+            <li><NavLink href="/meals">Browse meals</NavLink></li>
+            <li><NavLink href="/community">Foodies Community</NavLink></li>
           </ul>
         </nav>
       </header>

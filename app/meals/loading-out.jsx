@@ -1,0 +1,8 @@
+import React from 'react';
+import style from './loading.module.css'
+
+export default function MealsLoadingPage() {
+  return (
+    <p className={style.loading}>Fetching meals...</p>
+  )
+}
