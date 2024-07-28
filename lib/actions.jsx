@@ -33,6 +33,6 @@ export const shareMeal = async (prevState,formData) => {
     }
 
     await saveMeal(meal);
-    revalidatePath('/meals'); //vlear cache for that path to reload a meals
+    revalidatePath('/meals'); //clear cache for that path to reload a meals
     redirect('/meals');
 }

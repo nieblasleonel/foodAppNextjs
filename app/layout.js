@@ -1,18 +1,16 @@
-import { MainHeader } from '@/components/main-header/main-header';
-import './globals.css';
+import { MainHeader } from "@/components/main-header/main-header";
+import "./globals.css";
 
 export const metadata = {
-  title: 'Meals',
-  description: 'Delicious meals, shared by a food-loving community.',
+  title: "Meals",
+  description: "Delicious meals, shared by a food-loving community.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>     
-        
-        <MainHeader/>
-
+      <body>
+        <MainHeader />
         {children}
       </body>
     </html>
